@@ -26,10 +26,10 @@ func NewNSPEvent(date, name string, teamMembers []string, primaryContact string)
 }
 
 func main() {
-	event := NewNSPEvent("2024-01-15", "NSP Sankranthi Event", []string{"Yeswanth", "Rakesh", "Harshitha"}, "John Doe")
+	event := NewNSPEvent("2024-01-15", "NSP Sankranthi Event", []string{"Yeswanth", "Rakesh", "Harshitha"}, "Rakesh")
 
 	event.OrganizingTeam.TeamMembers = append(event.OrganizingTeam.TeamMembers, "Deepak")
-	event.OrganizingTeam.PrimaryContact = "Rakesh"
+	event.OrganizingTeam.PrimaryContact = "Yeswanth"
 
 	fmt.Println("Event Details:")
 	fmt.Println("Date:", event.EventDate)
